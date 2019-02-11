@@ -1,0 +1,6 @@
+subj.conf
+*.pem
+*.srl
+root
+server
+client-*

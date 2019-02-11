@@ -1,0 +1,27 @@
+#!/bin/sh
+# This file contains fields used by openssl for the "-subj" argument.
+
+# Field     Meaning                     Example
+# C         Country                     US
+# ST        State                       Indiana
+# L         Location                    Indianapolis
+# O         Organization                My Awesome Midwestern Company
+# OU        Organizational Unit         Engineering
+# CN        Common Name                 www.website.com
+
+# Modify these values to what you want for the root certificate authority.
+ROOT_C="US"
+ROOT_ST="Indiana"
+ROOT_L="Indianapolis"
+ROOT_O="My Awesome Midwestern Company"
+ROOT_OU="Engineering"
+ROOT_CN="www.website.com"
+
+# Modify these value to what you want for MQTT client / server.
+# NOTE: At least one value must be different for this to work.
+MQTT_C="US"
+MQTT_ST="Indiana"
+MQTT_L="Indianapolis"
+MQTT_O="My Awesome Midwestern Company"
+MQTT_OU="Engineering"
+MQTT_CN="www.mqtt.website.com"
